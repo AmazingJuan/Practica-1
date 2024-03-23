@@ -17,19 +17,15 @@ class F1Team{
         int thropies;
 
     public:
-        string getName();
 
-        void setName(string name);
+    F1Team(string name, string brand, int foundationYear, int thropies);
 
-        string getBrand();
-
-        void setBrand(string brand);
-
-        int getFoundationYear();
-
-        void setFoundationYear(int foundationYear);
-
-        int getThropies();
-
-        void setThropies(int thropies);
+    string getName();
+    void setName(string name);
+    string getBrand();
+    void setBrand(string brand);
+    int getFoundationYear();
+    void setFoundationYear(int foundationYear);
+    int getThropies();
+    void setThropies(int thropies);
 };

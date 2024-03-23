@@ -6,3 +6,11 @@
 #define PRACTICA1_LOLLIPOPMAN_H
 
 #endif //PRACTICA1_LOLLIPOPMAN_H
+
+class LollipopMan : public PitCrewTeam {
+private:
+public:
+
+    void findSafeSpace();
+    void giveSignal();
+};
