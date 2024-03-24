@@ -6,9 +6,11 @@
 #include "iostream"
 using namespace std;
 
-TyreOn::TyreOn(int numWheel){
+TyreOn::TyreOn(string name, int numWheel, string uniqueTalent, string pitTeamName, class F1Team F1Team ): PitCrewTeam(uniqueTalent, pitTeamName, F1Team){
+    this -> name = name;
     this -> numWheel = numWheel;
 }
+
 void TyreOn::bringTyre(){
     cout << "Trayendo la llanta..." << endl;
 }

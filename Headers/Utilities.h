@@ -2,10 +2,9 @@
 #define PRACTICA1_UTILITIES_H
 
 #include "thread"
+#include "iostream"
 using namespace std;
 
-void congelarPantalla(int seconds){
-    this_thread::sleep_for(chrono::seconds(seconds));
-}
-
+void sleep(int seconds);
+void clean();
 #endif //PRACTICA1_UTILITIES_H

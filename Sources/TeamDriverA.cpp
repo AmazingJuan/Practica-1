@@ -3,26 +3,22 @@
 //
 
 #include "../Headers/TeamDriverA.h"
-TeamDriverA::TeamDriverA(PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team): PitCrewTeam(uniqueTalent,pitTeamName,F1Team, pilotTeam){
+TeamDriverA::TeamDriverA(PitCrewTeam pitTeam, string uniqueTalent, string pitTeamName, class F1Team F1Team): PitCrewTeam(uniqueTalent,pitTeamName,F1Team){
     this -> pitTeam = pitTeam;
-    this -> miembros = miembros;
+    this -> driverName = pitTeam.getDriverA();
 }
 
-void TeamDriverA::setNombrePiloto (string nombrePiloto){
-    TeamDriverA::nombrePiloto = nombrePiloto;
+void TeamDriverA::setDriverName (string driverName){
+    TeamDriverA::driverName = driverName;
 }
-string TeamDriverA::getNombrePiloto(){
-    return nombrePiloto;
+
+string TeamDriverA::getDriverName() {
+    return driverName;
 }
+
 void TeamDriverA::setPitCrewTeam (PitCrewTeam pitTeam){
     TeamDriverA::pitTeam = pitTeam;
 }
 PitCrewTeam TeamDriverA::getPitCrewTeam(){
     return pitTeam;
-}
-void TeamDriverA::setMiembros(int miembros){
-    TeamDriverA::miembros = miembros;
-}
-int TeamDriverA::getMiembros(){
-    return miembros;
 }

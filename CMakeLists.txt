@@ -28,4 +28,5 @@ add_executable(Practica1 ../main.cpp
         Sources/TyreGunner.cpp
         Sources/TyreOff.cpp
         Sources/TyreOn.cpp
-        Headers/Utilities.h)
+        Headers/Utilities.h
+        Sources/Utilities.cpp)

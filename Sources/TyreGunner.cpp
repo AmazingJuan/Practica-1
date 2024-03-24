@@ -6,8 +6,13 @@
 #include "iostream"
 using namespace std;
 
-TyreGunner::TyreGunner(int numWheel){
+TyreGunner::TyreGunner(string name, int numWheel, string uniqueTalent, string pitTeamName, class F1Team F1Team ): PitCrewTeam(uniqueTalent, pitTeamName, F1Team){
+    this -> name = name;
     this -> numWheel = numWheel;
+}
+
+string TyreGunner::getName(){
+    return name;
 }
 
 void TyreGunner::loosenNut(){

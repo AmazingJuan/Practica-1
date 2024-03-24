@@ -6,7 +6,8 @@
 #include "iostream"
 using namespace std;
 
-TyreOff::TyreOff(int numWheel){
+TyreOff::TyreOff(string name, int numWheel, string uniqueTalent, string pitTeamName, class F1Team F1Team ): PitCrewTeam(uniqueTalent, pitTeamName, F1Team){
+    this -> name = name;
     this -> numWheel = numWheel;
 }
 

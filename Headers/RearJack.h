@@ -11,10 +11,11 @@ class RearJack : public TeamDriverA, TeamDriverB {
     private:
         string name;
     public:
-        RearJack(string name, int team, string, PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team);
-        RearJack(string name, short team, string, PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team);
+        RearJack(string name, char team, PitCrewTeam pitTeam, string uniqueTalent, string pitTeamName, class F1Team F1Team);
+        RearJack(string name, int team, PitCrewTeam pitTeam, string uniqueTalent, string pitTeamName, class F1Team F1Team);
         void slideJack();
         void liftCar();
         string getRole();
         void setRole(string role);
 };
+

@@ -127,6 +127,12 @@ build CMakeFiles/Practica1.dir/Sources/TyreOn.cpp.obj: CXX_COMPILER__Practica1_u
   OBJECT_DIR = CMakeFiles\Practica1.dir
   OBJECT_FILE_DIR = CMakeFiles\Practica1.dir\Sources
 
+build CMakeFiles/Practica1.dir/Sources/Utilities.cpp.obj: CXX_COMPILER__Practica1_unscanned_Debug C$:/Users/juanp/CLionProjects/Practica1/Practica-1/Sources/Utilities.cpp || cmake_object_order_depends_target_Practica1
+  DEP_FILE = CMakeFiles\Practica1.dir\Sources\Utilities.cpp.obj.d
+  FLAGS = -g -std=gnu++23 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Practica1.dir
+  OBJECT_FILE_DIR = CMakeFiles\Practica1.dir\Sources
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Practica1
@@ -135,7 +141,7 @@ build CMakeFiles/Practica1.dir/Sources/TyreOn.cpp.obj: CXX_COMPILER__Practica1_u
 #############################################
 # Link the executable Practica1.exe
 
-build Practica1.exe: CXX_EXECUTABLE_LINKER__Practica1_Debug CMakeFiles/Practica1.dir/main.cpp.obj CMakeFiles/Practica1.dir/Sources/F1Team.cpp.obj CMakeFiles/Practica1.dir/Sources/FrontJack.cpp.obj CMakeFiles/Practica1.dir/Sources/FrontWingAdjust.cpp.obj CMakeFiles/Practica1.dir/Sources/LollipopMan.cpp.obj CMakeFiles/Practica1.dir/Sources/PitCrewTeam.cpp.obj CMakeFiles/Practica1.dir/Sources/RearJack.cpp.obj CMakeFiles/Practica1.dir/Sources/SideJack.cpp.obj CMakeFiles/Practica1.dir/Sources/TeamDriverA.cpp.obj CMakeFiles/Practica1.dir/Sources/TeamDriverB.cpp.obj CMakeFiles/Practica1.dir/Sources/TyreGunner.cpp.obj CMakeFiles/Practica1.dir/Sources/TyreOff.cpp.obj CMakeFiles/Practica1.dir/Sources/TyreOn.cpp.obj
+build Practica1.exe: CXX_EXECUTABLE_LINKER__Practica1_Debug CMakeFiles/Practica1.dir/main.cpp.obj CMakeFiles/Practica1.dir/Sources/F1Team.cpp.obj CMakeFiles/Practica1.dir/Sources/FrontJack.cpp.obj CMakeFiles/Practica1.dir/Sources/FrontWingAdjust.cpp.obj CMakeFiles/Practica1.dir/Sources/LollipopMan.cpp.obj CMakeFiles/Practica1.dir/Sources/PitCrewTeam.cpp.obj CMakeFiles/Practica1.dir/Sources/RearJack.cpp.obj CMakeFiles/Practica1.dir/Sources/SideJack.cpp.obj CMakeFiles/Practica1.dir/Sources/TeamDriverA.cpp.obj CMakeFiles/Practica1.dir/Sources/TeamDriverB.cpp.obj CMakeFiles/Practica1.dir/Sources/TyreGunner.cpp.obj CMakeFiles/Practica1.dir/Sources/TyreOff.cpp.obj CMakeFiles/Practica1.dir/Sources/TyreOn.cpp.obj CMakeFiles/Practica1.dir/Sources/Utilities.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Practica1.dir
