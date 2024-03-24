@@ -21,6 +21,6 @@ string LollipopMan::getName(){
     return name;
 }
 
-void LollipopMan::setName(string Name){
+void LollipopMan::setName(string name){
     LollipopMan::name = name;
 }
