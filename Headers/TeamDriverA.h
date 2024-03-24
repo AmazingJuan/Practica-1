@@ -4,22 +4,18 @@
 
 #include "PitCrewTeam.h"
 
-#ifndef PRACTICA1_TEAMDRIVERA_H
-#define PRACTICA1_TEAMDRIVERA_H
-
-#endif //PRACTICA1_TEAMDRIVERA_H
-
 class TeamDriverA : public PitCrewTeam{
     
     private:
-        string nombrePiloto;
+        string nombrePiloto = "Max Verstappen";
         PitCrewTeam pitTeam;
         int miembros;
+        string pilotTeam = "A";
 
     public:
 
-    TeamDriverA(string nombrePiloto, PitCrewTeam pitTeam, int miembros);
-    
+    TeamDriverA(PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team);
+    TeamDriverA() = default;
     void setNombrePiloto (string nombrePiloto);
     string getNombrePiloto();
     void setPitCrewTeam (PitCrewTeam pitTeam);

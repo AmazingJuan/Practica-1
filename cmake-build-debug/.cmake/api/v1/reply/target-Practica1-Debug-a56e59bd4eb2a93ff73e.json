@@ -131,7 +131,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				25
 			]
 		}
 	],
@@ -274,6 +275,11 @@
 			"compileGroupIndex" : 0,
 			"path" : "Sources/TyreOn.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Headers/Utilities.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

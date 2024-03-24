@@ -4,8 +4,7 @@
 
 #include "../Headers/TeamDriverB.h"
 
-TeamDriverB::TeamDriverB(string nombrePiloto, PitCrewTeam pitTeam, int miembros){
-    this -> nombrePiloto = nombrePiloto;
+TeamDriverB::TeamDriverB(PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team): PitCrewTeam(uniqueTalent,pitTeamName,F1Team, pilotTeam){
     this -> pitTeam = pitTeam;
     this -> miembros = miembros;
 }
@@ -17,7 +16,7 @@ string TeamDriverB::getNombrePiloto(){
     return nombrePiloto;
 }
 void TeamDriverB::setPitCrewTeam (PitCrewTeam pitTeam){
-    TeamDriverB::PitTeam = pitTeam;
+    TeamDriverB::pitTeam = pitTeam;
 }
 PitCrewTeam TeamDriverB::getPitCrewTeam(){
     return pitTeam;

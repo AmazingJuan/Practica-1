@@ -3,6 +3,8 @@
 //
 
 #include "../Headers/TyreGunner.h"
+#include "iostream"
+using namespace std;
 
 TyreGunner::TyreGunner(int numWheel){
     this -> numWheel = numWheel;
@@ -22,6 +24,6 @@ void TyreGunner::fitNut(){
 void TyreGunner::setNumWheel(int numWheel){
     TyreGunner::numWheel = numWheel;
 }
-int TyreGunner::getNumWheel(){
+int TyreGunner::getNumWheel() const{
     return numWheel;
 }

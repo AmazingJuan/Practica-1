@@ -2,13 +2,11 @@
 // Created by juanp on 21/3/2024.
 //
 
-#ifndef PRACTICA1_TYREGUNNER_H
-#define PRACTICA1_TYREGUNNER_H
-
-#endif //PRACTICA1_TYREGUNNER_H
+#include "PitCrewTeam.h"
 
 class TyreGunner : public PitCrewTeam {
 private:
+    string name;
     int numWheel;
 public:
     TyreGunner(int numWheel);
@@ -17,6 +15,6 @@ public:
     void removeNut();
     void fitNut();
     void setNumWheel(int numWheel);
-    int getNumWheel();
+    int getNumWheel() const;
 
 };

@@ -3,9 +3,15 @@
 //
 
 #include "../Headers/SideJack.h"
+#include "iostream"
+using namespace std;
 
-SideJack::SideJack(string side){
-    this -> side = side;
+SideJack::SideJack(string name, int team, string, PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team) : TeamDriverA(pitTeam, miembros, uniqueTalent, pitTeamName, F1Team){
+    this->name = name;
+}
+
+SideJack::SideJack(string name, short team, string, PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team) : TeamDriverB(pitTeam, miembros, uniqueTalent, pitTeamName, F1Team){
+    this->name = name;
 }
 
 void SideJack::stabilizeCar(){
@@ -14,10 +20,4 @@ void SideJack::stabilizeCar(){
 void SideJack::liftCar(){
     cout << "Levantando el coche..." << endl;
     cout << "El coche ha sido levantado correctamente." << endl;
-}
-void SideJack::setSide(string side){
-    SideJack::side = side;
-}
-string SideJack::getSide(){
-    return side;
 }

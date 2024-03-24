@@ -2,20 +2,20 @@
 // Created by juanp on 21/3/2024.
 //
 
-#ifndef PRACTICA1_FRONTJACK_H
-#define PRACTICA1_FRONTJACK_H
-
-#endif //PRACTICA1_FRONTJACK_H
-
 #include "string"
+#include "TeamDriverA.h"
+#include "TeamDriverB.h"
+
 using namespace std;
 
-class FrontJack : public PitCrewTeam {
+class FrontJack : TeamDriverA,  TeamDriverB{
 private:
-    string role;
+    string name;
+
 
 public:
-    FrontJack(string role);
+    FrontJack(string name, int team, string, PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team);
+    FrontJack(string name, short team, string, PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team);
 
     void slideJack();
     void liftCar();

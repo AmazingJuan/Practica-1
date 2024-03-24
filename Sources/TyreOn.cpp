@@ -3,6 +3,8 @@
 //
 
 #include "../Headers/TyreOn.h"
+#include "iostream"
+using namespace std;
 
 TyreOn::TyreOn(int numWheel){
     this -> numWheel = numWheel;
@@ -18,6 +20,6 @@ void TyreOn::fitTyre(){
 void TyreOn::setNumWheel(int numWheel){
     TyreOn::numWheel = numWheel;
 }
-int TyreOn::getNumWheel(){
+int TyreOn::getNumWheel() const{
     return numWheel;
 }

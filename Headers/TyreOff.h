@@ -2,10 +2,7 @@
 // Created by juanp on 21/3/2024.
 //
 
-#ifndef PRACTICA1_TYREOFF_H
-#define PRACTICA1_TYREOFF_H
-
-#endif //PRACTICA1_TYREOFF_H
+#include "PitCrewTeam.h"
 
 class TyreOff : public PitCrewTeam {
 
@@ -15,6 +12,6 @@ public:
     TyreOff(int numWheel);
 
     void removeTyre();
-    void setNumWheel();
-    int getNumWheel();
+    void setNumWheel(int numWheel);
+    int getNumWheel() const;
 };

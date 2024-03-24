@@ -2,23 +2,21 @@
 // Created by juanp on 21/3/2024.
 //
 
-#ifndef PRACTICA1_SIDEJACK_H
-#define PRACTICA1_SIDEJACK_H
-
-#endif //PRACTICA1_SIDEJACK_H
-
 #include "string"
+#include "TeamDriverA.h"
+#include "TeamDriverB.h"
+
 using namespace std;
 
-class SideJack : public PitCrewTeam {
+class SideJack : public TeamDriverA, TeamDriverB {
 
 private:
-    string side;
+    string name;
 public:
-    SideJack(string side);
-
+    SideJack(string name, int team, string, PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team);
+    SideJack(string name, short team, string, PitCrewTeam pitTeam, int miembros, string uniqueTalent, string pitTeamName, class F1Team F1Team);
     void stabilizeCar();
     void liftCar();
-    void setSide();
+    void setSide(string side);
     string getSide();
 };

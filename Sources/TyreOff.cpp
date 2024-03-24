@@ -3,6 +3,8 @@
 //
 
 #include "../Headers/TyreOff.h"
+#include "iostream"
+using namespace std;
 
 TyreOff::TyreOff(int numWheel){
     this -> numWheel = numWheel;
@@ -15,6 +17,6 @@ void TyreOff::removeTyre(){
 void TyreOff::setNumWheel(int numWheel){
     TyreOff::numWheel = numWheel;
 }
-int TyreOff::getNumWheel(){
+int TyreOff::getNumWheel() const{
     return numWheel;
 }
