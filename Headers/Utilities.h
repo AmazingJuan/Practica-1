@@ -5,6 +5,7 @@
 #include "iostream"
 using namespace std;
 
-void sleep(int seconds);
-void clean();
+void sleep(int seconds); //Funcion para congelar la pantalla
+void clean(); //Funcion para Limpiar la Pantalla
+
 #endif //PRACTICA1_UTILITIES_H

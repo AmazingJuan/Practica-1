@@ -13,11 +13,19 @@ FrontJack::FrontJack(string name, char team, PitCrewTeam pitTeam, string uniqueT
     this->name = name;
 }
 
-void FrontJack::slideJack(){
-    cout << "Deslizando el gato debajo de la parte delantera del coche..." << endl;
-    cout << "EL Gato ha sido deslizado correctamente." << endl;
+string FrontJack::slideJack(){
+    return " slides the jack under the front of the car";
 }
-void FrontJack::liftCar(){
-    cout << "Levantando la parte delantera del coche..." << endl;
-    cout << "El Coche ha sido levantado exitosamente." << endl;
+string FrontJack::liftCar(){
+    return " lifts the front of the car";
 }
+
+//SETTERS Y GETTERS
+
+string FrontJack::getName(){
+    return name;
+}
+
+void FrontJack::setName(string name){
+    this->name = name;
+};

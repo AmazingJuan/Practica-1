@@ -10,10 +10,17 @@ LollipopMan::LollipopMan(string name, string uniqueTalent, string pitTeamName, c
     this->name = name;
 };
 
-void LollipopMan::findSafeSpace(){
-    cout << "Buscando un espacio seguro para que el piloto arranque..." << endl;
-    cout << "Espacio encontrado correctamente" << endl;
+string LollipopMan::findSafeSpace(){
+    return " looks for a safe space for the pilot to start";
 }
-void LollipopMan::giveSignal(){
-    cout << "El Coche puede arrancar Go Go Go..." << endl;
-};
+string LollipopMan::giveSignal(){
+    return " gives the signal that the car can start";
+}
+
+string LollipopMan::getName(){
+    return name;
+}
+
+void LollipopMan::setName(string Name){
+    LollipopMan::name = name;
+}

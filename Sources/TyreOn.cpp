@@ -6,22 +6,31 @@
 #include "iostream"
 using namespace std;
 
-TyreOn::TyreOn(string name, int numWheel, string uniqueTalent, string pitTeamName, class F1Team F1Team ): PitCrewTeam(uniqueTalent, pitTeamName, F1Team){
+TyreOn::TyreOn(string name, string numWheel, string uniqueTalent, string pitTeamName, class F1Team F1Team ): PitCrewTeam(uniqueTalent, pitTeamName, F1Team){
     this -> name = name;
     this -> numWheel = numWheel;
 }
 
-void TyreOn::bringTyre(){
-    cout << "Trayendo la llanta..." << endl;
+
+string TyreOn::bringTyre() const{
+    return " brings the tyre " + this -> getNumWheel();
 }
 
-void TyreOn::fitTyre(){
-    cout << "Montando la llanta al coche..." << endl;
-    cout << "La llanta ha sido montada al coche correctamente." << endl;
+string TyreOn::fitTyre() const{
+    return " fits the tyre " + this -> getNumWheel();
 }
-void TyreOn::setNumWheel(int numWheel){
+//SETTERS Y GETTERS
+string TyreOn::getName(){
+    return name;
+}
+
+void TyreOn::setName(string name){
+    TyreOn::name = name;
+}
+
+void TyreOn::setNumWheel(string numWheel){
     TyreOn::numWheel = numWheel;
 }
-int TyreOn::getNumWheel() const{
+string TyreOn::getNumWheel() const{
     return numWheel;
 }

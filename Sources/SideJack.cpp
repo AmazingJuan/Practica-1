@@ -14,10 +14,17 @@ SideJack::SideJack(string name, char team, PitCrewTeam pitTeam, string uniqueTal
     this->name = name;
 }
 
-void SideJack::stabilizeCar(){
-    cout << "Estabilizando el coche para mantenerlo lo más quieto posible..." << endl;
+string SideJack::stabilizeCar(){
+    return " stabilizes the car so that it is as still as possible.";
 }
-void SideJack::liftCar(){
-    cout << "Levantando el coche..." << endl;
-    cout << "El coche ha sido levantado correctamente." << endl;
+string SideJack::liftCar(){
+    return " lifts the car on the side in case the front jack cannot";
+}
+
+string SideJack::getName(){
+    return name;
+}
+
+void SideJack::setName(std::string name){
+    SideJack::name = name;
 }

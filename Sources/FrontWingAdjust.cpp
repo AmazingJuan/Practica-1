@@ -14,10 +14,17 @@ FrontWingAdjust::FrontWingAdjust(string name, char team, PitCrewTeam pitTeam, st
     this->name = name;
 }
 
-void FrontWingAdjust::turnScrew(){
-    cout << "Girando Tornillo..." << endl;
+string FrontWingAdjust::getName(){
+    return name;
 }
-void FrontWingAdjust::adjustFlap(){
-    cout << "Ajustando Flap..." << endl;
-    cout  << "Cambios Aerodinámicos realizados al alerón correctamente." << endl;
+
+void FrontWingAdjust::setName(string name){
+    FrontWingAdjust::name = name;
+}
+
+string FrontWingAdjust::turnScrew(){
+    return " turns the screw ";
+}
+string FrontWingAdjust::adjustFlap(){
+    return " adjusts the Front Flap";
 }

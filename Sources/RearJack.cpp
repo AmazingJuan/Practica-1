@@ -13,11 +13,17 @@ RearJack::RearJack(string name, char team, PitCrewTeam pitTeam, string uniqueTal
     this->name = name;
 }
 
-void RearJack::slideJack(){
-    cout << "Deslizando el gato debajo de la parte trasera del coche..." << endl;
-    cout << "EL Gato ha sido deslizado correctamente." << endl;
+string RearJack::slideJack(){
+    return " slides the jack under the back of the car";
 }
-void RearJack::liftCar(){
-    cout << "Levantando la parte trasera del coche..." << endl;
-    cout << "El coche ha sido levantado exitosamente." << endl;
+string RearJack::liftCar(){
+    return " lifts the back of the car";
+}
+
+string RearJack::getName(){
+    return name;
+}
+
+string RearJack::setName(string name){
+    this->name = name;
 }

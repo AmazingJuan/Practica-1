@@ -21,7 +21,7 @@ PitCrewTeam::PitCrewTeam(string uniqueTalent, string pitTeamName, class F1Team F
 PitCrewTeam::PitCrewTeam()= default;
 
 string PitCrewTeam::buildPresentation() {
-    string presentation = "The Pit Team prepared to handle the vehicle stop in today's race is " + pitTeamName + "known primarily for their unique talent: "  + uniqueTalent +  "and the ability to perform at their best.\nWe will be accompanied by the pilots " + driverA + " Y "+ driverB + " who will give their best to win the race.";
+    string presentation = "========================================== PIT CREW TEAM ========================================== \n\nThe Pit Team prepared to handle the vehicle stop in today's race is " + pitTeamName + "\nThey're known primarily for their unique talent: "  + uniqueTalent +  " and the ability to perform at their best.\nWe will be accompanied by the pilots " + driverA + " Y "+ driverB + " who will give their best to win the race.\n\n========================================== PIT CREW TEAM ==========================================";
     return presentation;
 }
 
